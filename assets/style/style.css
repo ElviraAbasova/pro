@@ -5,6 +5,7 @@
     font-family: "Roboto", sans-serif;
 
 
+
 }
 div#top{
     padding: 10px;
@@ -104,7 +105,7 @@ header{
     width: 100%;
     min-height: 500px;
     height: 900px;
-    background-image: url(../image/carousel-2.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0 ,0 ,0 , 0.5)), url("../image/carousel-2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -355,7 +356,7 @@ h2{
     color: black;
 }
 #quote{
-
+    overflow-x: hidden;
     margin-top: 200px;
     width: 100%;
     background-color: rgb(245, 245, 245);
@@ -534,6 +535,18 @@ hr{
 .below a{
     color: white;
 }
+.fixbtn{
+    cursor: pointer;
+    padding: 15px;
+    background-color: rgb(171, 116, 66) ;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.fixbtn i{
+    color: white;
+}
+
 
 @media (min-width: 768px) and (max-width: 992px) {
     div#top{
@@ -543,7 +556,7 @@ hr{
         display: none;
     }
     .hamburger{
-        padding: 20px 10px;
+        padding: 30px;
         display: block;
     }
     .main{
@@ -595,7 +608,7 @@ hr{
         display: none;
     }
     .hamburger{
-        padding: 20px 10px;
+        padding: 30px;
         display: block;
     }
     .main{
@@ -626,7 +639,7 @@ hr{
     .cards{
         grid-template-columns: 1fr;
         gap: 40px;
-        margin: 80px;
+        margin: 60px;
     }
     h2{
         font-size: 30px;
@@ -653,11 +666,6 @@ hr{
   #quote{
 
     grid-template-columns: 1fr;
-}
-
-.quoimg img{
-    width: 100%;
-    
 }
 .form .inside{
     margin: 30px;
